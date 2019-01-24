@@ -1,4 +1,0 @@
-
-打包过程中，pyinstaller  打包完成后，启动应用程序，出现cmd的黑框问题解决方法：
-
-https://blog.csdn.net/La_vie_est_belle/article/details/81252588

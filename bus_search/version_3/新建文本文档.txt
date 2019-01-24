@@ -1,0 +1,10 @@
+
+文件 bus_search_3_GUI  对bus_search_v1.py进行了重构，生成了一个标准类
+
+文件：bus_search_v3_GUI  实现了GUI 编程
+
+
+
+程序功能实现
+
+采用了 python+ selenium + chromedriver  的方式 构建爬虫，爬取了lijn 公交车站点信息，点击home 显示的是如果想回家，在学校车站的公交到站时间，并能够选择自己要乘坐的公交，设置一个提前8分钟的闹钟，现在就是采用了单线程方式，程序有未反应的bug
