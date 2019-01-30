@@ -1,22 +1,43 @@
-### 公交查询GUI 的第一版，初步实现了功能  导入了buss_search 1 这个包中的相应程序
+### 公交查询GUI 的第3版，实现的功能为查找班车，并能选定要做的班车，然后提前八分钟闹钟提示
+###涉及到了，多线程解决卡死问题，arrow 时间模块，winsound采用的是闹钟模块，apscheduler的延时设置问题，
 from bus_search_3_GUI import bus_search
 import tkinter,arrow
 import winsound
 from apscheduler.schedulers.blocking import BlockingScheduler
+import threading
+
+
+
+def thread_it(func, *args):
+    '''将函数打包进线程'''
+    # 创建
+    t = threading.Thread(target=func, args=args)
+    # 守护 !!!
+    t.setDaemon(True)
+    # 启动
+    t.start()
+    # 阻塞--卡死界面！
+    # t.join()
+
+
+
+
 
 
 def clear():
 
-    pass
+    for widget in frm.winfo_children():
+        widget.destroy()
 
 def go(a):
 
     global direct_number
-
+    clear()
     check = bus_search()
     check.ask(a)
     check.get()
     number = check.get_information()
+    print(number)
     direct_number = direct_bus(number)
     creat_radionbutton(direct_number)
 
@@ -61,6 +82,11 @@ def get_time():
 
 def set_clock():
 
+    l.destroy()
+
+    l1 = tkinter.Label(width=25, height=1, text='The alarm clock has been set', font=('Arial', 20), bg='#F0FFFF')
+    l1.place(x=60, y=30)
+
     def clock():
 
         file = "bird.wav"
@@ -99,7 +125,6 @@ def creat_radionbutton(direct_number):
 
         a = var.get()
 
-        print(a)
 
     for i in range(len(direct_number)):
 
@@ -139,16 +164,16 @@ if __name__ == '__main__':
     l =tkinter.Label(width=25, height=1, text='chose your destination', font=('Arial',20),bg='#F0FFFF')
     l.place(x=60, y=30)
 
-    b1 = tkinter.Button(window, text="home", width=15, height=2, command=lambda:go("home"))  #使用lambda 向回调函数中传入参数
+    b1 = tkinter.Button(window, text="home", width=15, height=2, command=lambda:thread_it(go,"home"))  #使用lambda 向回调函数中传入参数
     b1.place(x=60, y=130)
 
     b3 = tkinter.Button(window, text="clear", width=12, height=2, command=clear)
     b3.place(x=380, y=400)
 
-    b4 = tkinter.Button(window, text="choose", width=12, height=2, command=set_clock)
+    b4 = tkinter.Button(window, text="choose", width=12, height=2, command=lambda:thread_it(set_clock))
     b4.place(x=380, y=300)
 
-    b2 = tkinter.Button(window, text="work", width=15, height=2, command=lambda:go("work"))
+    b2 = tkinter.Button(window, text="work", width=15, height=2, command=lambda:thread_it(go,"work"))
     b2.place(x=245, y=130)
 
 
