@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9f5c5208-3e88-43fc-a92a-da3c3c8efe25" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/version_3/bird.wav" beforeDir="false" afterPath="$PROJECT_DIR$/version_3/bird.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/version_3/bus_search_v3_GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/version_3/bus_search_v3_GUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/version_3/新建文本文档.txt" beforeDir="false" afterPath="$PROJECT_DIR$/version_3/新建文本文档.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/version_4/bus_search_v4_GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/version_4/bus_search_v4_GUI.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +13,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/version_4/bus_search_v4_GUI.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="96">
               <caret line="91" selection-start-line="91" selection-end-line="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/version_1/bus_search_v1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1072">
+              <caret line="14" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -79,7 +86,7 @@
             <path>
               <item name="bus_search" type="b2602c69:ProjectViewProjectNode" />
               <item name="bus_search" type="462c0819:PsiDirectoryNode" />
-              <item name="version_4" type="462c0819:PsiDirectoryNode" />
+              <item name="version_1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -110,8 +117,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.winsound_temo">
-    <configuration name="bus_search_v1_GUI (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.bus_search_v1">
+    <configuration name="bus_search_v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bus_search" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -123,7 +130,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/version_1/bus_search_v1_GUI.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/version_1/bus_search_v1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -218,11 +225,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bus_search_v1" />
         <item itemvalue="Python.winsound_temo" />
         <item itemvalue="Python.bus_search_v4_GUI" />
         <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.bus_search_v3_GUI" />
-        <item itemvalue="Python.bus_search_v1_GUI (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -293,9 +300,6 @@
     <entry file="file://$PROJECT_DIR$/to_exe.py" />
     <entry file="file://$PROJECT_DIR$/problem.txt" />
     <entry file="file://$PROJECT_DIR$/bus_search_v1_GUI.py" />
-    <entry file="file://$PROJECT_DIR$/version_1/bus_search_v1.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/version_1/bus_search_1_GUI.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -341,6 +345,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="91" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/version_1/bus_search_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1072">
+          <caret line="14" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="68" />
         </state>
       </provider>
     </entry>

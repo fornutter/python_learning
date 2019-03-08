@@ -90,7 +90,7 @@ def set_clock():
 
     def clock():
 
-        winsound.Beep(400, 1100)
+        winsound.Beep(400,2000)
 
     sched = BlockingScheduler()
 
